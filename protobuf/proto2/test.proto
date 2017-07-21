@@ -1,0 +1,27 @@
+option java_outer_classname = "com.aaa.test.TestPro";//生成的数据访问类的类名  
+
+message test{
+   required string versionid=1;
+   message http{
+      required string subversion=1;
+      required string createdtime=2;
+      message files{
+          required string fieldname=1;
+          required string fieldtype=2;
+          required string fieldlength=3;
+          required string desc=4;
+          required string order=5;
+      }
+   }
+   message email{
+      required string subversion=1;
+      required string createdtime=2;
+      message files{
+          required string fieldname=1;
+          required string fieldtype=2;
+          required string fieldlength=3;
+          required string desc=4;
+          required string order=5;
+      }
+   }
+}
